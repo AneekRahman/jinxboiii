@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingRight="14dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANEEK"
+        android:textColor="#00a6ff"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/pointer"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="#00a6ff"
+            android:rotation="45"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/chat_msg_other_bg">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#00a6ff"/>
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sheeps, Sheeps, Sheeeeeeeeps!!"
+                android:paddingLeft="10dp"
+                android:paddingRight="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

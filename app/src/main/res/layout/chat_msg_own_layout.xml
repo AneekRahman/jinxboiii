@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="14dp"
+    android:orientation="vertical"
+    android:gravity="right">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ME"
+        android:textColor="#ff0044"
+        android:textStyle="bold"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/pointer"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="#ff0044"
+            android:rotation="45"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/chat_msg_own_bg"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sheeps, Sheeps, Sheeeeeeeeps!!"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:fontFamily="@font/varela_round_regular"
+                android:textColor="#000"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#ff0044"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
